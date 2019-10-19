@@ -1,0 +1,213 @@
+#wrapper {
+  height: 100vh;
+  width: 100vw;
+  background-color: #ccc;
+  margin: 0px auto;
+  position: relative;
+  overflow: scroll;
+}
+
+button {
+  font-family: "Trebuchet MS"
+}
+
+p h1 {
+  opacity: .6;
+  font-family: "Times New Roman";
+}
+
+p {
+  text-indent: 4em;
+}
+h1 {
+  text-align: center;
+}
+
+#header {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  top: 0px;
+  padding-top: 40vh;
+  text-align: center;
+  text-transform: uppercase;
+  animation-name: intro;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-fuction: ease-in;
+}
+
+@keyframes intro {
+  0%{
+    top: -200px;
+    transform: rotate(-7deg);
+  }
+  18% {
+    top: 0px;
+  }
+  30% {
+    transform: rotate(7deg);
+  }
+  45% {
+    transform: rotate(-6deg);
+  }
+  50% {
+    top: 0px;
+    transform: rotate(8deg);
+  }
+  55% {
+    transform: rotate(-8deg);
+  }
+  60% {
+    transform: rotate(-6deg);
+  }
+  65% {
+    transform: rotate(6deg);
+  }
+  70% {
+    transform: rotate(-4deg);
+  }
+  75% {
+    transform: rotate(4deg);
+  }
+  80% {
+    transform: rotate(-2deg);
+  }
+  85% {
+    transform: rotate(2deg);
+  }
+  90% {
+    transform: rotate(-2deg);
+  }
+  95% {
+    transform: rotate(2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+#header > h1,h4 {
+  font-family: "Trebuchet MS"; 
+  margin: 5px;
+  font-weight: 50;
+}
+
+#header > h1 {
+  position: relative;
+  bottom: 58px;
+  font-size: 100px;
+}
+
+#header > h4 {
+  position: relative;
+  bottom: 58px;
+  font-size: 35px;
+}
+
+#nav-bar {
+  width: 100vw;
+  height: 100px;
+  background: #8A0000;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  text-align: center;
+  z-index: 1;
+}
+
+#nav-bar > button {
+  height: 50px;
+  width: 150px;
+  border-radius: 12px;
+  border-style: none;
+  background-color: black;
+  font-family: Georgia;
+  color: white;
+  font-size: 18px;
+  margin: 15px;
+}
+
+#nav-bar > button:hover {
+  color: #8A0000;
+  text-transform: uppercase;
+  font-family: "Arial Black";
+  font-weight: 500;
+  animation-name: wiggle;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-3deg);
+  }
+  75% {
+    transform: rotate(3deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+  
+}
+
+#nav-2 {
+  background-color: #1D3145;
+}
+
+#nav-2 > button {
+  height: 40px;
+  width: 150px;
+  border-style: none;
+  border-radius: 12px;
+  background-color: #677B90;
+  font-family: Georgia;
+  color: white;
+  padding: 10px;
+  margin: 10px;
+}
+
+#nav-2 > button:hover {
+  color: #8A0000;
+  text-transform: uppercase;
+  font-family: "Arial Black";
+  animation-name: wiggle;
+  animation-duration: .3s;
+  animation-iteration-count: 1;
+  animation-direction: reverse;
+}
+.content {
+  position: absolute;
+  top: 200vh;
+  padding: 20vw;
+}
+
+p::first-letter {
+  font-size: 26px;
+}
+
+img {
+  border-style: solid;
+  border-width; 12px;
+  border-color: white;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  opacity: .6;
+}
+
+img:hover {
+  opacity: 1;
+}
+
+#footer {
+  height: 40px;
+  width: 100vw;
+  background-color: #8A0000;
+  position: fixed;
+  bottom: 0px;
+}
